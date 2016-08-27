@@ -2,6 +2,17 @@
 
 def find_longest_word(sentence)
 
+  @sentence = sentence
+  @array = [] << sentence.split
+  
+  find_longest_word = ""
+  words = sentence.split(" ")
+  words.each do |word|
+    find_longest_word = word unless word.length <= find_longest_word.length
+  end
+
+  find_longest_word
+
 end
 
 # Driver code - don't touch anything below this line.

@@ -4,7 +4,19 @@
 
 def reverse_a_string(string)
 
-end
+  @string = string
+  @index = @string.length
+  @reverse_a_string = ""
+
+  i = @index - 1 
+
+  while i >=0 do
+   @reverse_a_string << @string[i]
+   i = i - 1
+  end
+
+  return @reverse_a_string
+  end
 
 # Driver code - don't touch anything below this line.
 puts "TESTING reverse_a_string..."
